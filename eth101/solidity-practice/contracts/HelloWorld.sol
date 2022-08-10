@@ -7,7 +7,7 @@ pragma solidity ^0.8.3;
 // truffle -> mocha / cli framework
 
 contract HelloWorld {
-    string public greeting = "Hello Wolrd";
+    string public greeting = "Hello World";
 }
 
 /*
