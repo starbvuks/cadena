@@ -12,12 +12,12 @@ contract TodoList {
     mapping(uint256 => Task) public tasks;
 
     constructor() public {
-        createTask("first task");
+        createTask("first task", true);
     }
 
-    function createTask(string memory _content) public {
+    function createTask(string memory _content, bool _done) public {
         taskCount++;
         // task num (task-count) has content and is set completed = false
-        tasks[taskCount] = Task(taskCount, _content, false);
+        tasks[taskCount] = Task(taskCount, _content, _done);
     }
 }
